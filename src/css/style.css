@@ -20,7 +20,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 95%;
+    width: 88%;
   }
 }
 
@@ -85,6 +85,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 17px 0 18px 0;
+  }
   .navbar__contacts {
     display: none;
   }
@@ -94,6 +97,10 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+  .navbar__button {
+    padding: 15px 26px 14px 26px;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
