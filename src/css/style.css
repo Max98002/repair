@@ -1,3 +1,10 @@
+a:active,
+a:focus,
+button {
+  outline: none;
+  cursor: pointer;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -41,11 +48,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar__info {
@@ -53,8 +60,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -64,8 +71,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 13px;
   font-weight: 700;
 }
@@ -88,19 +95,24 @@ img {
   .navbar {
     padding: 17px 0 18px 0;
   }
+
   .navbar__contacts {
     display: none;
   }
+
   .navbar__button {
     font-size: 12px;
     padding: 15px 26px;
   }
+
   .navbar__logo {
     width: 90px;
   }
+
   .navbar__button {
     padding: 15px 26px 14px 26px;
     font-size: 10px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
