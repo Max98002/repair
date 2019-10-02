@@ -82,9 +82,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: flex-strat;
-      -ms-flex-align: flex-strat;
-          align-items: flex-strat;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-align: right;
 }
 
@@ -101,7 +101,7 @@ img {
 
 .navbar__phone {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 7px;
   color: #333333;
   font-size: 20px;
   text-decoration: none;
@@ -138,7 +138,7 @@ img {
 }
 
 .hero {
-  padding: 50px 0;
+  padding: 49px 0;
   background-color: #f5f5f5;
 }
 
@@ -149,15 +149,15 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
   padding-right: 120px;
 }
 
 .hero-text__title {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-size: 41px;
-  line-height: 55px;
+  line-height: 136%;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -165,7 +165,9 @@ img {
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-list {
@@ -180,7 +182,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+  margin-left: -2px;
 }
 
 .hero-list__image {
@@ -193,7 +196,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 30px;
+  margin-right: 27px;
   min-width: 40px;
   height: 40px;
   border: 2px solid #ffd200;
@@ -202,6 +205,14 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.hero-list__text:nth-child(2) {
+  margin-bottom: -2px;
 }
 
 @media (max-width: 991px) {
