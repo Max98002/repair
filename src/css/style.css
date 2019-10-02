@@ -48,6 +48,13 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    width: 85%;
+  }
+}
+
 .button {
   padding: 18px 30px;
   border-radius: 10px;
@@ -75,9 +82,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: flex-strat;
+      -ms-flex-align: flex-strat;
+          align-items: flex-strat;
   text-align: right;
 }
 
@@ -124,8 +131,9 @@ img {
     width: 90px;
   }
   .navbar__button {
-    padding: 15px 26px 14px 26px;
+    padding: 15px 26px 15px 26px;
     font-size: 10px;
+    margin-left: 25px;
   }
 }
 
@@ -212,22 +220,27 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 20px 0;
+  }
   .hero-text__title {
     font-size: 24px;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    line-height: 1.3;
+    margin-bottom: 6px;
   }
   .hero-text__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
-  .hero-list-item {
-    margin-bottom: 20px;
+  .hero-list__item {
+    margin-bottom: 15px;
   }
   .hero-list__text {
     font-size: 12px;
   }
-  .hero-list-image {
+  .hero-list__image {
     margin-right: 10px;
   }
 }
