@@ -38,7 +38,6 @@
     justify-content: space-between
     color: $text-color
     letter-spacing: -0.4px
-    +bold
   &__manager
     line-height: 24px
     width: 248px
@@ -48,6 +47,7 @@
   &__phone
     text-decoration: none
     color: $text-color
+    +bold
 @media ( max-width: 1200px )
   .offer
     &__input
@@ -64,3 +64,28 @@
     &-block
       width: 100%
       padding-right: 0
+    &__title
+      font-size: 18px
+      line-height: 125%
+    &__subtitle
+      font-size: 14px
+      max-width: 203px
+    &__text
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      margin-left: 5px
+      +reg
+    &__manager
+      margin-bottom: 7px
+      max-width: 239px
+    &__button
+      font-size: 14px
+      padding: 18px 45px 18px 50px
+      margin-bottom: 23px
+    &__form
+      margin-top: -2px
+    &__input
+      margin-bottom: 9px
+    &__address
+      margin-bottom: 9px
