@@ -40,7 +40,7 @@
     letter-spacing: -0.4px
   &__manager
     line-height: 24px
-    width: 248px
+    width: 229px
   &__address
     display: flex
     margin-bottom: 11px
@@ -55,6 +55,14 @@
       margin-bottom: 10px
     &__button
       font-size: 13px
+    &__text
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      margin-left: 5px
+      +reg
+    &__manager
+      margin-bottom: 7px
 @media ( max-width: 992px )
   .offer
     background-size: cover
@@ -70,14 +78,14 @@
     &__subtitle
       font-size: 14px
       max-width: 203px
-    &__text
-      flex-direction: column
-      justify-content: center
-      align-items: flex-start
-      margin-left: 5px
-      +reg
+    // &__text
+    //   flex-direction: column
+    //   justify-content: center
+    //   align-items: flex-start
+    //   margin-left: 5px
+    //   +reg
     &__manager
-      margin-bottom: 7px
+      // margin-bottom: 7px
       max-width: 239px
     &__button
       font-size: 14px

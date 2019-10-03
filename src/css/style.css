@@ -373,7 +373,7 @@ img {
 
 .offer__manager {
   line-height: 24px;
-  width: 248px;
+  width: 229px;
 }
 
 .offer__address {
@@ -397,6 +397,24 @@ img {
   }
   .offer__button {
     font-size: 13px;
+  }
+  .offer__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 5px;
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
+  }
+  .offer__manager {
+    margin-bottom: 7px;
   }
 }
 
@@ -422,23 +440,7 @@ img {
     font-size: 14px;
     max-width: 203px;
   }
-  .offer__text {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-left: 5px;
-    font-family: 'Museo Sans Light', sans-serif;
-    font-weight: 300;
-  }
   .offer__manager {
-    margin-bottom: 7px;
     max-width: 239px;
   }
   .offer__button {
