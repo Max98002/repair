@@ -1,3 +1,7 @@
+*,
+*::after,
+*::before
+  box-sizing: border-box
 a:active,
 a:focus,
 button
@@ -28,3 +32,14 @@ img
   border-radius: 10px
   background-color: $main-color
   border: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+
+.section
+  padding: 90px 0
+  &-title
+    font-size: 24px
+    +bold
+  &-subtitle
+    display: block
+    font-size: 16px
