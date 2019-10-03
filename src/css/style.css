@@ -74,7 +74,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 17px 0 95px;
 }
 
 .section-title {
@@ -86,6 +86,13 @@ img {
 .section-subtitle {
   display: block;
   font-size: 16px;
+}
+
+.input {
+  padding: 25px 26px;
+  font-size: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -183,7 +190,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 42%;
       flex-basis: 42%;
-  padding-right: 120px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -300,19 +307,112 @@ img {
   }
 }
 
+.offer {
+  background: url("../img/offer/offer-img.png") no-repeat center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .offer-block {
   width: 50%;
   padding-right: 90px;
+  position: relative;
 }
 
 .offer__title {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   max-width: 360px;
   line-height: 36px;
 }
 
 .offer__subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   max-width: 250px;
+}
+
+.offer__input {
+  margin-bottom: 26px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 11px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 28px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #333333;
+  letter-spacing: -0.4px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer__manager {
+  line-height: 24px;
+  width: 248px;
+}
+
+.offer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.offer__phone {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .offer {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
