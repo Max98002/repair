@@ -38,13 +38,17 @@ img
     background-color: lighten($main-color, 10%)
 
 .section
-  padding: 17px 0 95px
+  padding: 55px 0 95px
   &-title
     font-size: 24px
     +bold
   &-subtitle
     display: block
     font-size: 16px
+@media ( max-width: 768px )
+  .section
+    padding: 35px 0 95px
+  
 .input
   padding: 23px 26px
   font-size: 15px
