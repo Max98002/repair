@@ -7,6 +7,8 @@ a:focus,
 button
   outline: none
   cursor: pointer
+input
+  outline: none
 body
   +reg
 img
@@ -48,3 +50,6 @@ img
   font-size: 15px
   border: 1px solid $border-input
   border-radius: 10px
+  &:focus
+    border-color: $main-color
+    border-radius: 10px

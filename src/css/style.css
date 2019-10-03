@@ -28,6 +28,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -92,6 +96,11 @@ img {
   padding: 23px 26px;
   font-size: 15px;
   border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+.input:focus {
+  border-color: #ffd200;
   border-radius: 10px;
 }
 
