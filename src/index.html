@@ -24,7 +24,7 @@
             <a href="tel:380680811952" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -126,6 +126,39 @@
     </section>
     <!-- /.offer -->
   </main>
+
+  <div class="modal modal_active" id="modal">
+    <div class="container">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <div class="modal-block">
+          <div class="modal-block__menu">
+
+          </div>
+          <!-- /.modal__menu -->
+          <div class="modal-block__price">
+            <h4 class="modal-block__title">Узнайте точную стоимость ремонта по телефону!</h4>
+            <span class="modal-block__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+            <form action="#" class="form modal__form">
+              <input type="text" class="input modal__input" placeholder="Ваше имя">
+              <input type="tel" class="input modal__input" placeholder="Ваш телефон">
+              <button class="button offer__button">Узнать стоимость</button>
+            </form>
+            <div class="modal__contacts">
+              <span class="modal__address">Или Вы можете перезвонить нам сами по телефону:</span>
+              <a href="tel:380680811952" class="modal__phone">+7 (495) 42-251-31</a>
+            </div>
+          </div>
+          <!-- /.modal__price -->
+        </div>
+        <!-- /.modal-block -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <script src="../src/js/main.js"></script>
 
 </body>
 

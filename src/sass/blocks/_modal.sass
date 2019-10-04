@@ -1,0 +1,76 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000000, 0.5)
+  display: none
+  justify-content: center
+  align-items: center
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    width: 100%
+    background: #ffffff
+    &__close
+      position: absolute
+      top: 10px
+      right: 10px
+  &-block
+    display: flex
+    justify-content: space-between
+    &__menu
+      flex-basis: 54%
+      padding: 80px 113px 75px 78px
+      background: $modal-color
+    &__price
+      flex-basis: 46%
+      padding: 80px 100px 76px 100px
+      text-align: center
+    &__title
+      margin-top: 0
+      margin-bottom: 45px
+      font-size: 22px
+    &__subtitle
+      display: inline-block
+      margin-bottom: 45px
+      font-size: 16px
+  &__input
+    width: 100%
+    margin-bottom: 15px
+    &:nth-last-child(2)
+      margin-bottom: 30px
+  &__contacts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__address
+    margin-bottom: 13px
+    font-size: 15px
+    width: 271px
+  &__phone
+    color: $text-color
+    text-decoration: none
+    font-size: 24px
+    +bold
+@media ( max-width: 1200px )
+  .modal
+    &-block
+      &__menu
+        padding: 80px 50px
+      &__price
+        padding: 80px 50px
+@media ( max-width: 992px )
+  .modal
+    &-block
+      flex-direction: column
+@media ( max-width: 768px )
+  .modal
+    &-block
+      &__menu
+        padding: 30px 10px
+      &__price
+        padding: 30px 10px
