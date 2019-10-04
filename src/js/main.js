@@ -9,3 +9,9 @@ button.addEventListener('click', function () {
 close.addEventListener('click', function () {
   modal.classList.remove('modal_active');
 })
+
+function move() {
+  modal.classList.remove('modal_active');
+}
+
+setInterval(move, 5000)
