@@ -12,21 +12,21 @@
     display: flex
   &-dialog
     position: relative
-    width: 100%
+    margin: auto
+    width: 50%
     background: #ffffff
     &__close
       position: absolute
       top: 10px
       right: 10px
+      font-size: 18px
+      background: $main-color
+      border: none
+      border-radius: 2px
   &-block
-    display: flex
-    justify-content: space-between
-    &__menu
-      flex-basis: 54%
-      padding: 80px 113px 75px 78px
-      background: $modal-color
+    width: 100%
     &__price
-      flex-basis: 46%
+      flex-basis: 100%
       padding: 80px 100px 76px 100px
       text-align: center
     &__title
@@ -59,25 +59,30 @@
 @media ( max-width: 1200px )
   .modal
     &-block
-      &__menu
-        padding: 80px 50px
       &__price
         padding: 80px 50px
+    &-dialog
+      width: 60%
 @media ( max-width: 992px )
   .modal
-    &-block
-      flex-direction: column
+    &-dialog
+      width: 70%
 @media ( max-width: 768px )
   .modal
     &-block
-      &__menu
-        padding: 30px 30px
       &__price
-        padding: 30px 40px
+        padding: 40px 20px
+    &-dialog
+      width: 80%
 @media ( max-width: 542px )
   .modal
     &-block
-      &__menu
-        padding: 30px 20px
       &__price
-        padding: 30px 20px
+        padding: 50px 30px
+      &__title
+        font-size: 17px
+        margin-bottom: 30px
+      &__subtitle
+        font-size: 15px
+    &-dialog
+      width: 100%

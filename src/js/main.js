@@ -14,4 +14,4 @@ function move() {
   modal.classList.remove('modal_active');
 }
 
-setInterval(move, 5000)
+// setInterval(move, 5000)
