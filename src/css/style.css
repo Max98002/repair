@@ -110,6 +110,13 @@ img {
   border-radius: 10px;
 }
 
+.back-top {
+  position: fixed;
+  width: 50px;
+  bottom: 0;
+  right: 2%;
+}
+
 .navbar {
   padding: 8px 0;
 }
