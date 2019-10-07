@@ -11,4 +11,10 @@ $(document).ready(function () {
     modal.removeClass('modal_active');
   });
 
+  function move() {
+    modal.removeClass('modal_active');
+  }
+  setInterval(move, 5000);
+
+
 });
