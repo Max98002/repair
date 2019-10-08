@@ -639,12 +639,13 @@ img {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 90px;
+  line-height: 144%;
 }
 
 .portfolio__arrows {
   max-width: 120px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,12 +657,17 @@ img {
           align-items: center;
 }
 
+.slider__item {
+  margin-right: 15px;
+}
+
 .slider__img {
-  margin: auto;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .portfolio {
+    background-image: none;
     padding: 5px 0 56px;
   }
   .portfolio__title {
