@@ -663,16 +663,24 @@ img {
 
 .slider__img {
   width: 100%;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
   .portfolio {
     background-image: none;
-    padding: 5px 0 56px;
+    padding: 5px 0 75px;
   }
   .portfolio__title {
     font-size: 18px;
-    margin-bottom: 51px;
+    margin-bottom: 35px;
+    line-height: 133%;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+  .slider__item {
+    margin-right: 0;
   }
   .slider__img {
     width: 246px;
