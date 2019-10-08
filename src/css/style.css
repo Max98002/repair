@@ -82,6 +82,7 @@ img {
 }
 
 .section-title {
+  text-align: center;
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -94,7 +95,7 @@ img {
 
 @media (max-width: 768px) {
   .section {
-    padding: 35px 0 95px;
+    padding: 35px 0 56px;
   }
 }
 
@@ -115,6 +116,10 @@ img {
   width: 30px;
   bottom: 2%;
   right: 2%;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -355,6 +360,7 @@ img {
   margin-bottom: 17px;
   max-width: 360px;
   line-height: 36px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -446,6 +452,7 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
+    padding: 35px 0 56px;
   }
   .offer-block {
     width: 100%;
@@ -616,6 +623,53 @@ img {
   }
   .modal-dialog {
     width: 100%;
+  }
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/fon-portfolio.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 800px;
+  font-size: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__img {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 5px 0 56px;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    margin-bottom: 51px;
+  }
+  .slider__img {
+    width: 246px;
   }
 }
 /*# sourceMappingURL=style.css.map */
