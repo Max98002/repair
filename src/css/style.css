@@ -813,19 +813,21 @@ img {
 }
 
 @media (max-width: 826px) {
-  .cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .card:nth-of-type(4) {
+  .card {
     margin-bottom: 30px;
   }
-  .card:nth-of-type(5) {
-    margin-bottom: 30px;
+  .card__text {
+    padding: 30px 0 29px;
   }
-  .card:nth-of-type(6) {
-    margin-bottom: 0;
+  .card__title {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+  .card__link {
+    font-size: 16px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
 }
 
@@ -844,15 +846,6 @@ img {
     margin-top: 22px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
-  }
-  .card__title {
-    font-size: 14px;
-    margin: 0;
-    margin-top: 16px;
-    margin-bottom: 15px;
-  }
-  .card__text {
-    padding: 31px 0 29px;
   }
 }
 
@@ -893,7 +886,6 @@ img {
   height: 100px;
   border-radius: 50%;
   border: 3px solid #ffd200;
-  margin-bottom: 30px;
 }
 
 .step__text {
@@ -967,20 +959,18 @@ img {
 @media (max-width: 542px) {
   .step {
     margin: 0;
-    margin-top: 24px;
-    margin-bottom: 15px;
-  }
-  .step:first-child {
-    margin-top: 0;
+    margin-bottom: 32px;
   }
   .step__text {
-    font-size: 12px;
+    width: 128px;
+    font-size: 11px;
+    line-height: 16px;
   }
   .step__image {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   .steps {
-    padding: 28px 0 56px;
+    padding: 0px 0 56px;
   }
   .steps-block {
     -webkit-box-orient: vertical;
