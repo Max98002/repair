@@ -776,7 +776,7 @@ img {
 }
 
 .card__text {
-  padding: 16px 0 40px;
+  padding: 14px 0 40px;
 }
 
 .card__title {
@@ -854,6 +854,125 @@ img {
     margin: 0;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+}
+
+.step {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin-top: 58px;
+  text-align: center;
+  position: relative;
+}
+
+.step::after {
+  content: '';
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -15%;
+  background: url("../img/steps/arrow.png") no-repeat center;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffd200;
+  margin-bottom: 30px;
+}
+
+.step__text {
+  font-size: 14px;
+  width: 160px;
+  margin: auto;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.steps__title {
+  margin: auto;
+  margin-top: 9px;
+  max-width: 666px;
+  font-size: 30px;
+  line-height: 144%;
+}
+
+.steps__subtitle {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  line-height: 144%;
+}
+
+@media (max-width: 992px) {
+  .step {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 15px;
+  }
+  .step::after {
+    display: none;
+  }
+  .steps-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 826px) {
+  .steps__title {
+    font-size: 18px;
+  }
+  .steps__subtitle {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 542px) {
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
