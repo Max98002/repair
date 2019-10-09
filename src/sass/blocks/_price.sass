@@ -1,0 +1,106 @@
+.price
+  &__title
+    margin: auto
+    margin-top: 35px
+    max-width: 515px
+    font-size: 30px
+    line-height: 144%
+  &__subtitle
+    text-align: center
+    margin-top: 48px
+    font-size: 20px
+    line-height: 144%
+  &__card
+    margin-bottom: 30px
+.card  
+  &s
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-top: 56px
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border: 1px solid $border-card
+  transition: all 0.3s
+  &:nth-of-type(4)
+    margin-bottom: 0
+  &:nth-of-type(5)
+    margin-bottom: 0
+  &:nth-of-type(6)
+    margin-bottom: 0
+  &__image
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+      opacity: 0
+      transition: all 0.3s
+  img
+    display: block
+  &__text
+    padding: 16px 0 40px
+  &__title
+    font-size: 18px
+    margin-bottom: 30px
+  &__link
+    display: inline-block
+    position: relative
+    font-size: 16px
+    line-height: 18px
+    color: $text-color
+    text-decoration: none
+    +bold
+    &:hover
+      &::after
+        height: 13px
+    &::after
+      content: ''
+      position: absolute
+      z-index: -999
+      bottom: -5px
+      left: 0
+      display: block
+      width: 100%
+      height: 3px
+      background-color: $main-color
+      transition: all 0.3s
+  &:hover
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    .card__image::before
+      opacity: 1
+@media (max-width: 826px)
+  .card
+    &s
+      justify-content: center
+    &:nth-of-type(4)
+      margin-bottom: 30px
+    &:nth-of-type(5)
+      margin-bottom: 30px
+    &:nth-of-type(6)
+      margin-bottom: 0
+@media (max-width: 542px)
+  .price
+    &__title
+      font-size: 18px
+      margin-top: 13px
+      line-height: 124%
+    &__subtitle
+      font-size: 14px
+      margin-top: 24px
+  .card
+    &__title
+      font-size: 14px
+      margin: 0
+      margin-top: 15px
+      margin-bottom: 15px
+
+
