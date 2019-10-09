@@ -904,6 +904,10 @@ img {
   font-weight: 700;
 }
 
+.steps {
+  padding: 27px 0 90px;
+}
+
 .steps-block {
   display: -webkit-box;
   display: -ms-flexbox;
