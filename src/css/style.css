@@ -688,6 +688,11 @@ img {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
   }
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 542px) {
@@ -1043,12 +1048,24 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .brif__input {
+    margin-right: 10px;
+  }
+  .brif__input:nth-of-type(2) {
+    margin-right: 0;
+  }
   .form__title {
     font-size: 20px;
     margin-bottom: 15px;
   }
   .form__subtitle {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 830px) {
+  .brif__input {
+    margin-right: 0;
   }
 }
 
@@ -1063,6 +1080,9 @@ img {
   .brif__form {
     padding-left: 0;
     padding-top: 40px;
+  }
+  .brif__input {
+    margin-right: 0;
   }
   .brif__input:nth-of-type(2) {
     margin-bottom: 10px;
