@@ -120,6 +120,11 @@ img {
   width: 245px;
 }
 
+.input-group__brif {
+  max-width: 370px;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   .input-group__item {
     width: 100%;
