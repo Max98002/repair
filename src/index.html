@@ -371,7 +371,7 @@
     <!-- /.section brif -->
   </main>
 
-  <div class="modal" id="modal">
+  <div class="modal modal_active" id="modal">
     <div class="container">
       <div class="modal-dialog">
         <button class="modal-dialog__close" id="close">&times;</button>
@@ -379,9 +379,15 @@
           <div class="modal-block__price">
             <h4 class="modal-block__title">Узнайте точную стоимость ремонта по телефону!</h4>
             <span class="modal-block__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-            <form action="#" class="form modal__form">
-              <input type="text" class="input modal__input" placeholder="Ваше имя">
-              <input type="tel" class="input modal__input" placeholder="Ваш телефон">
+            <form action="#" class="form modal__form" id="modalValidate">
+              
+              <div class="input-group">
+                <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
+              </div>
+              <div class="input-group">
+                <input type="tel" name="phone" class="input modal__input" placeholder="Ваш телефон">
+              </div>
+
               <button class="button offer__button">Узнать стоимость</button>
             </form>
             <div class="modal__contacts">
@@ -459,6 +465,32 @@
         },
         errorElement: "div",
         errorClass: "offerError",
+        messages: {
+          username: {
+            required: "Укажите имя",
+            minlength: jQuery.validator.format("Осталось cимволов! {0}")
+          },
+          phone: {
+            required: "Укажите телефон"
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#modalValidate').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2
+          },
+          phone: {
+            required: true,
+          }
+        },
+        errorElement: "div",
+        errorClass: "modalError",
         messages: {
           username: {
             required: "Укажите имя",

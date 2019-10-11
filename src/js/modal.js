@@ -14,7 +14,7 @@ $(document).ready(function () {
   function move() {
     modal.removeClass('modal_active');
   }
-  setInterval(move, 5000);
+  // setInterval(move, 5000);
 
   // $('#up').click(function () {
   //   $('body,html').animate({ scrollTop: 0 }, 500);
