@@ -59,6 +59,14 @@ img
     border-radius: 10px
   &-group
     position: relative
+    &__item
+      display: inline-block
+      width: 245px
+@media ( max-width: 1200px )
+  .input
+    &-group   
+      &__item     
+        width: 100%
 .back-top
   position: fixed
   width: 30px
@@ -77,5 +85,14 @@ div.invalid
   right: 8%
   transform: translateY(-96%)
   font-size: 14px
+  color: red
+  border: none
+.offerError
+  border: 1px solid red
+div.offerError
+  position: absolute
+  top: 29%
+  right: 5%
+  font-size: 12px
   color: red
   border: none

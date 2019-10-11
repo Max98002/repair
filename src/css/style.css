@@ -115,6 +115,17 @@ img {
   position: relative;
 }
 
+.input-group__item {
+  display: inline-block;
+  width: 245px;
+}
+
+@media (max-width: 1200px) {
+  .input-group__item {
+    width: 100%;
+  }
+}
+
 .back-top {
   position: fixed;
   width: 30px;
@@ -137,6 +148,19 @@ div.invalid {
   -webkit-transform: translateY(-96%);
           transform: translateY(-96%);
   font-size: 14px;
+  color: red;
+  border: none;
+}
+
+.offerError {
+  border: 1px solid red;
+}
+
+div.offerError {
+  position: absolute;
+  top: 29%;
+  right: 5%;
+  font-size: 12px;
   color: red;
   border: none;
 }
@@ -380,6 +404,12 @@ div.invalid {
   width: 50%;
   padding-right: 90px;
   position: relative;
+}
+
+.offer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .offer__title {
@@ -932,6 +962,7 @@ div.invalid {
   line-height: 32px;
   font-size: 17px;
   margin-bottom: 33px;
+  margin-left: -7px;
 }
 
 .brif-block {

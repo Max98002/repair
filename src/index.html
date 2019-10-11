@@ -108,9 +108,15 @@
             бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form" id="brif__form">
-            <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="input offer__input" placeholder="Ваш телефон">
+          <form action="#" class="form offer__form" id="offervalidate__form">
+
+            <div class="input-group input-group__item">
+              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+            </div>
+            <div class="input-group input-group__item">
+              <input type="tel" name="phone" class="input offer__input" placeholder="Ваш телефон">
+            </div>
+
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
@@ -323,7 +329,8 @@
               </li>
               <li class="interview-list__item">
                 <span class="interview-list__counter interview-list__updating">3.</span>
-                <span class="interview-list__text interview-list__uptexttt">Где находится помещение, в котором будет производиться
+                <span class="interview-list__text interview-list__uptexttt">Где находится помещение, в котором будет
+                  производиться
                   ремонт?</span>
               </li>
               <li class="interview-list__item">
@@ -344,10 +351,11 @@
               <div class="input-group">
                 <input type="text" autocomplete="off" name="username" class="input brif__input" placeholder="Ваше имя">
               </div>
-              <div class="input-group"> 
-                <input type="tel" autocomplete="off" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+              <div class="input-group">
+                <input type="tel" autocomplete="off" name="phone" class="input brif__input phone"
+                  placeholder="Ваш телефон">
               </div>
-              <div class="input-group"> 
+              <div class="input-group">
                 <input type="email" autocomplete="off" name="email" class="input brif__input" placeholder="Ваш email">
               </div>
               <button class="button brif__button">Рассчитать стоимост</button>
@@ -432,6 +440,32 @@
           email: {
             required: "Заполните поле Email",
             email: "Введите корректный email"
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#offervalidate__form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2
+          },
+          phone: {
+            required: true,
+          }
+        },
+        errorElement: "div",
+        errorClass: "offerError",
+        messages: {
+          username: {
+            required: "Укажите имя",
+            minlength: jQuery.validator.format("Осталось cимволов! {0}")
+          },
+          phone: {
+            required: "Укажите телефон"
           }
         }
       });
