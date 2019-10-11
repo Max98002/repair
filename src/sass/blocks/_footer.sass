@@ -60,9 +60,16 @@
     width: 100%
   .contacts
     flex-basis: 100%
-    padding-left: 0
+    &__title
+      margin: 0 auto
+      margin-bottom: 39px
+    &-list
+      display: block
+      width: 323px
+      margin: 0 auto
 @media ( max-width: 768px )
   .contacts
+    padding: 0px
     padding-top: 42px
     padding-bottom: 25px
     &__title
@@ -73,6 +80,9 @@
       letter-spacing: -0.3px
       +bold
     &-list
+      width: 280px
+      padding-left: 0
+      padding-right: 0
       &__item
         &:first-child
           margin-bottom: 38px

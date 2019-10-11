@@ -1513,12 +1513,21 @@ div.modalError {
   .contacts {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding-left: 0;
+  }
+  .contacts__title {
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+  .contacts-list {
+    display: block;
+    width: 323px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
   .contacts {
+    padding: 0px;
     padding-top: 42px;
     padding-bottom: 25px;
   }
@@ -1530,6 +1539,11 @@ div.modalError {
     letter-spacing: -0.3px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
+  }
+  .contacts-list {
+    width: 280px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .contacts-list__item:first-child {
     margin-bottom: 38px;
