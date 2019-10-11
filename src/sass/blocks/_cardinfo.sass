@@ -1,0 +1,53 @@
+.info
+  padding: 100px 0 90px
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+.cardinfo
+  padding: 27px 57px 0 25px
+  height: 417px
+  background: url("../img/cardinfo/cardinfo1.png") no-repeat bottom center
+  background-color: $modal-color
+  &__fon
+    background: url("../img/cardinfo/cardinfo2.png") no-repeat bottom center
+    background-color: $modal-color
+  &__fonn
+    background: url("../img/cardinfo/cardinfo3.png") no-repeat bottom center
+    background-color: $modal-color
+  &__text
+    font-size: 16px
+    line-height: 23px
+    max-width: 289px
+  &__strong
+    +bold
+@media ( max-width: 1200px )
+  .info
+    &-block
+      justify-content: space-around
+  .cardinfo
+    margin-bottom: 28px
+    &:last-child
+      margin-bottom: 0
+@media ( max-width: 420px )
+  .info
+    padding: 58px 0 90px
+  .cardinfo
+    height: 0
+    padding: 17px 58px 280px 19px
+    background-image: url("../img/cardinfo/cardinfo1.png")
+    background-size: contain
+    &__fon
+      background-image: url("../img/cardinfo/cardinfo2.png")
+      background-size: contain
+    &__fonn
+      background-image: url("../img/cardinfo/cardinfo3.png")
+      background-size: contain
+    &__text
+      font-size: 12px
+      width: 195px
+      line-height: 16.83px
+
+      
+  

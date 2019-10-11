@@ -1279,6 +1279,90 @@ div.modalError {
   }
 }
 
+.info {
+  padding: 100px 0 90px;
+}
+
+.info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cardinfo {
+  padding: 27px 57px 0 25px;
+  height: 417px;
+  background: url("../img/cardinfo/cardinfo1.png") no-repeat bottom center;
+  background-color: #f7f7f7;
+}
+
+.cardinfo__fon {
+  background: url("../img/cardinfo/cardinfo2.png") no-repeat bottom center;
+  background-color: #f7f7f7;
+}
+
+.cardinfo__fonn {
+  background: url("../img/cardinfo/cardinfo3.png") no-repeat bottom center;
+  background-color: #f7f7f7;
+}
+
+.cardinfo__text {
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 289px;
+}
+
+.cardinfo__strong {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .info-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cardinfo {
+    margin-bottom: 28px;
+  }
+  .cardinfo:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .info {
+    padding: 58px 0 90px;
+  }
+  .cardinfo {
+    height: 0;
+    padding: 17px 58px 280px 19px;
+    background-image: url("../img/cardinfo/cardinfo1.png");
+    background-size: contain;
+  }
+  .cardinfo__fon {
+    background-image: url("../img/cardinfo/cardinfo2.png");
+    background-size: contain;
+  }
+  .cardinfo__fonn {
+    background-image: url("../img/cardinfo/cardinfo3.png");
+    background-size: contain;
+  }
+  .cardinfo__text {
+    font-size: 12px;
+    width: 195px;
+    line-height: 16.83px;
+  }
+}
+
 .slogan {
   padding: 90px 0 85px;
   background: #ffd200;
@@ -1304,7 +1388,7 @@ div.modalError {
 
 @media (max-width: 568px) {
   .slogan {
-    padding: 50px 0 85px;
+    padding: 63px 0 77px;
   }
   .slogan__title {
     font-size: 18px;
