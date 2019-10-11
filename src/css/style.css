@@ -881,7 +881,7 @@ div.invalid {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
-  padding: 78px 0 90px;
+  padding: 78px 0 36px;
 }
 
 .brif__input {
@@ -919,7 +919,7 @@ div.invalid {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 217px;
+  padding-left: 218px;
   text-align: center;
 }
 
@@ -957,6 +957,7 @@ div.invalid {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 26px;
+  margin-left: 2px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -993,6 +994,7 @@ div.invalid {
 .interview-list__text {
   max-width: 400px;
   font-size: 18px;
+  letter-spacing: -0.2px;
 }
 
 .form__title {
