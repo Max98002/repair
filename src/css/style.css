@@ -1279,6 +1279,20 @@ div.modalError {
   }
 }
 
+.slogan {
+  padding: 90px 0 85px;
+  background: #ffd200;
+}
+
+.slogan__title {
+  margin: auto;
+  margin-left: -8px;
+  font-size: 32px;
+  line-height: 51px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
 .footer {
   position: relative;
 }
