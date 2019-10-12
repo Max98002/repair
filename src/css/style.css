@@ -1082,7 +1082,14 @@ div.modalError {
 }
 
 .document {
-  padding: 42px 0 106px;
+  padding: 42px 0 220px;
+}
+
+.document__title {
+  font-size: 30px;
+  margin: 0 auto;
+  margin-bottom: 85px;
+  line-height: 45px;
 }
 
 .document-block {
@@ -1094,33 +1101,24 @@ div.modalError {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.document__title {
-  max-width: 650px;
-  font-size: 30px;
-  line-height: 45px;
-  margin: 0 auto;
-  margin-bottom: 85px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-}
-
-.document__card {
-  text-align: center;
-}
-
 .document__image {
+  padding: 32px;
   background: #f7f7f7;
-  padding: 25px 30px 27px 21px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .document__text {
-  font-size: 18px;
+  max-width: 286px;
+  font-size: 17px;
   line-height: 24px;
+  letter-spacing: -0.2px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .brif {
