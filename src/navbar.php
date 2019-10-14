@@ -7,7 +7,7 @@
       </div>
 
       <div class="navbar__logo">
-        <img src="img/nav-menu/logo.png" alt="Логотип">
+        <a href="index.php"><img src="img/nav-menu/logo.png" alt="Логотип"></a>
       </div>
       <!-- /.navbar__logo -->
 
@@ -25,8 +25,8 @@
           <nav class="menu__nav">
             <a href="index.php" class="menu__link">Главная</a>
             <a href="portfolio.php" class="menu__link">Портфолио</a>
-            <a href="price.php" class="menu__link">Цины</a>
-            <a href="steps.php" class="menu__link">Крокы робот</a>
+            <a href="price.php" class="menu__link">Цены</a>
+            <a href="steps.php" class="menu__link">Шаги ремонта</a>
             <a href="info.php" class="menu__link">Вам дешевле</a>
             <a href="document.php" class="menu__link">Договоры</a>
             <a href="brif.php" class="menu__link">Стоимость</a>
