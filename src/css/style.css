@@ -1114,12 +1114,11 @@ div.modalError {
 
 .document__text {
   max-width: 286px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  color: red;
 }
 
 .brif {
