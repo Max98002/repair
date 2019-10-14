@@ -13,28 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar wow bounceInDown">
-    <div class="container">
-      <div class="navbar-block">
-        <div class="navbar__logo">
-          <img src="img/nav-menu/logo.png" alt="Логотип">
-        </div>
-        <!-- /.navbar__logo -->
-        <div class="navbar__info">
-          <div class="navbar__contacts">
-            <span class="navbar__address">Калуга, Москва, МО</span>
-            <a href="tel:380680811952" class="navbar__phone">+7 (495) 42-251-31</a>
-          </div>
-          <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button">Перезвоните мне</button>
-        </div>
-        <!-- /.navbar__info -->
-      </div>
-      <!-- /.navbar-block -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- /.navbar -->
+
+  <?php include('navbar.php') ?>
 
   <main>
     <section class="hero">
@@ -54,8 +34,7 @@
             <ul class="hero-list">
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                  <img class="wow zoomIn" data-wow-delay="0.4s" src="../src/img/hero/hero-list/hero-clock.png"
-                    alt="calc">
+                  <img class="wow zoomIn" data-wow-delay="0.4s" src="../src/img/hero/hero-list/hero-clock.png" alt="calc">
                 </div>
                 <span class="hero-list__text">
                   Точно соблюдаем сроки
@@ -63,8 +42,7 @@
               </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                  <img class="wow zoomIn" data-wow-delay="0.4s" src="../src/img/hero/hero-list/hero-calc.png"
-                    alt="board">
+                  <img class="wow zoomIn" data-wow-delay="0.4s" src="../src/img/hero/hero-list/hero-calc.png" alt="board">
                 </div>
                 <span class="hero-list__text">
                   Рассчитаем смету на работы <br>
@@ -73,8 +51,7 @@
               </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                  <img class="wow zoomIn" data-wow-delay="0.4s" src="../src/img/hero/hero-list/hero-board.png"
-                    alt="clock">
+                  <img class="wow zoomIn" data-wow-delay="0.4s" src="../src/img/hero/hero-list/hero-board.png" alt="clock">
                 </div>
                 <span class="hero-list__text">
                   Предложим более 100 вариантов <br>
@@ -108,14 +85,13 @@
             бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form" id="offervalidate__form">
+          <form action="mail.php" method="POST" class="form offer__form" id="offervalidate__form">
 
             <div class="input-group input-group__item">
               <input type="text" name="username" autocomplete="off" class="input offer__input" placeholder="Ваше имя">
             </div>
             <div class="input-group input-group__item">
-              <input type="tel" name="phone" autocomplete="off" class="input offer__input phone"
-                placeholder="Ваш телефон">
+              <input type="tel" name="phone" autocomplete="off" class="input offer__input phone" placeholder="Ваш телефон">
             </div>
 
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
@@ -451,8 +427,7 @@
                 <input type="text" autocomplete="off" name="username" class="input brif__input" placeholder="Ваше имя">
               </div>
               <div class="input-group input-group__brif">
-                <input type="tel" autocomplete="off" name="phone" class="input brif__input phone"
-                  placeholder="Ваш телефон">
+                <input type="tel" autocomplete="off" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
               </div>
               <div class="input-group input-group__brif">
                 <input type="email" autocomplete="off" name="email" class="input brif__input" placeholder="Ваш email">
@@ -516,6 +491,9 @@
               </span>
             </li>
           </ul>
+          <p><?php
+              echo date("l jS \of F Y h:i A")
+              ?></p>
         </div>
         <!-- /.contacts -->
       </div>
@@ -539,8 +517,7 @@
                 <input type="text" name="username" autocomplete="off" class="input modal__input" placeholder="Ваше имя">
               </div>
               <div class="input-group">
-                <input type="tel" name="phone" autocomplete="off" class="input modal__input phone"
-                  placeholder="Ваш телефон">
+                <input type="tel" name="phone" autocomplete="off" class="input modal__input phone" placeholder="Ваш телефон">
               </div>
 
               <button class="button offer__button">Узнать стоимость</button>
@@ -567,13 +544,12 @@
   <!-- /.back-top -->
 
   <!-- <script src="./js/main.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
   <!-- jqueryValidate -->
   <script src="./js/jquery.validate.min.js"></script>
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('#brif-form').validate({
         rules: {
           username: {
@@ -607,7 +583,7 @@
     });
   </script>
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('#offervalidate__form').validate({
         rules: {
           username: {
@@ -633,7 +609,7 @@
     });
   </script>
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('#modalValidate').validate({
         rules: {
           username: {
@@ -663,7 +639,7 @@
   <!-- jquery.maskedinput.min -->
   <script src="./js/jquery.maskedinput.min.js"></script>
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('.phone').mask("+38(999) 999-9999");
     });
   </script>
@@ -682,7 +658,7 @@
   <script src="./js/slick.min.js"></script>
 
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('.slider').slick({
         infinite: true,
         centerPadding: '60px',
