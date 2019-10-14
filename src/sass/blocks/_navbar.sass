@@ -1,13 +1,22 @@
 .navbar
-  padding: 8px 0
+  position: relative
+  z-index: 999
   &-block
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
+    background: #ffffff
+  &__btnmenu
+    max-width: 40px
+    &:hover
+      cursor: pointer
   &__info
     display: flex
+    justify-content: flex-end
     align-items: flex-start
     text-align: right
+    flex-basis: 75%
   &__address
     display: flex
     flex-direction: column
@@ -23,6 +32,54 @@
     margin-left: 30px
     font-size: 13px
     +bold
+.menu
+  position: absolute
+  width: 100%
+  transition: all .5s
+  transform: translateY(-250%)
+  z-index: -1
+  opacity: 0
+  &-wrap
+    background: $main-color
+    border-radius: 10px
+  &_active
+    transform: translateY(150%)
+    opacity: 1
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__link
+    padding: 10px 15px
+    text-decoration: none
+    text-transform: uppercase
+    color: $text-color
+    font-weight: 500
+    &::after
+      content: ""
+      display: flex
+      width: 100%
+      height: 2px
+      background-color: $text-color
+      transform: scale(0)
+      transition: all 0.2s
+    &:hover
+      &::after
+        transform: scale(1)
+@media ( max-width: 992px )
+  .navbar
+    &__info
+      flex-basis: 60%
+    &__menu
+      max-width: 35px
+  .menu
+    &_active
+      transform: translateY(64%)
+    &__nav
+      flex-direction: column
+      justify-content: center
+      align-items: center
 @media ( max-width: 768px )
   .navbar
     padding: 17px 0 18px 0
@@ -35,10 +92,13 @@
       font-size: 10px
       +bold
     &__logo
-      width: 90px
+      width: 80px
+      margin-right: -24px
     &__button
       margin-left: 25px
       margin-right: -5px
       padding: 15px 26px 15px 26px
       font-size: 10px
       margin-left: 25px
+    &__btnmenu
+      max-width: 20px
