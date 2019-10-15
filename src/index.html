@@ -108,7 +108,7 @@
             бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form" id="offervalidate__form">
+          <form action="mail.php" method="POST" id="offer-form" class="form offer__form offervalidate__form">
 
             <div class="input-group input-group__item">
               <input type="text" name="username" autocomplete="off" class="input offer__input" placeholder="Ваше имя">
@@ -119,6 +119,7 @@
             </div>
 
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+            <span class="offer__modalText">мы перезвоним через 15 минут</span>
           </form>
           <!-- /.form offer__form -->
           <div class="offer__text">
@@ -608,7 +609,15 @@
   </script>
   <script>
     $(document).ready(function () {
-      $('#offervalidate__form').validate({
+
+      var thanksmodal = $('#thanksmodal');
+      var closeThank = $('#closeThanksModal');
+      var modalText = $('.offer__modalText');
+      closeThank.on('click', function () {
+        thanksmodal.removeClass('thanksmodal_active');
+      });
+
+      $('.offervalidate__form').validate({
         rules: {
           username: {
             required: true,
@@ -628,6 +637,22 @@
           phone: {
             required: "Укажите телефон"
           }
+        },
+        submitHandler: function (form) {
+          $.ajax({
+            url: form.action,
+            type: form.method,
+            data: $(form).serialize(),
+            success: function (response) {
+              console.log("Hello Все гуд: " + response);
+              $('#offer-form')[0].reset();
+              $('.offer__button').text(response);
+              modalText.addClass('offer_active');
+            },
+            error: function (jqHXR, textStatus, errorThrown) {
+              console.log(jqHXR + " " + textStatus);
+            }
+          });
         }
       });
     });

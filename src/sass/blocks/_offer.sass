@@ -17,6 +17,8 @@
     position: relative
   &-wrap
     display: flex
+  &__form
+    position: relative
   &__title
     margin-bottom: 17px
     max-width: 360px
@@ -36,6 +38,17 @@
     min-height: 70px
     margin-bottom: 28px
     +bold
+  &__modalText
+    position: absolute
+    bottom: 7px
+    left: 50%
+    display: none
+    width: 100%
+    text-align: center
+    transform: translateX(-50%)
+    color: $main-color
+  &_active
+    display: block
   &__text
     display: flex
     align-items: center

@@ -436,6 +436,10 @@ div.modalError {
   display: flex;
 }
 
+.offer__form {
+  position: relative;
+}
+
 .offer__title {
   margin-bottom: 17px;
   max-width: 360px;
@@ -463,6 +467,22 @@ div.modalError {
   margin-bottom: 28px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+.offer__modalText {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  display: none;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #ffd200;
+}
+
+.offer_active {
+  display: block;
 }
 
 .offer__text {
