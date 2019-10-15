@@ -2,8 +2,6 @@ $(document).ready(function () {
   var button = $('#button');
   var modal = $('#modal');
   var close = $('#close');
-  var btnmenu = $('#btnmenu');
-  var menu = $('#menu');
 
   button.on('click', function () {
     modal.addClass('modal_active');
@@ -17,11 +15,6 @@ $(document).ready(function () {
     modal.removeClass('modal_active');
   }
   setInterval(move, 5000);
-
-  btnmenu.on('click', function () {
-    menu.toggleClass('menu_active');
-  });
-
 
 });
 
