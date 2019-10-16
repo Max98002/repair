@@ -1,0 +1,90 @@
+.thanksmodal
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 9999999
+  width: 100%
+  height: 100%
+  background-color: rgba(#000000, 0.5)
+  display: none
+  justify-content: center
+  align-items: center
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    width: 50%
+    background: #ffffff
+    border-radius: 10px
+    animation-name: zoomIn
+    animation-duration: .7s
+    &__close
+      position: absolute
+      top: 10px
+      right: 10px
+      font-size: 18px
+      background: $main-color
+      border: none
+      border-radius: 2px
+  &-block
+    width: 100%
+    &__price
+      flex-basis: 100%
+      padding: 80px 100px 76px 100px
+      text-align: center
+    &__title
+      margin-top: 0
+      margin-bottom: 45px
+      font-size: 22px
+    &__subtitle
+      display: inline-block
+      margin-bottom: 45px
+      font-size: 16px
+    &__image
+      animation-name: flash
+      animation-duration: 3s
+@media ( max-width: 1200px )
+  .thanksmodal
+    &-block
+      &__price
+        padding: 80px 50px
+    &-dialog
+      width: 60%
+@media ( max-width: 992px )
+  .thanksmodal
+    &-dialog
+      width: 70%
+@media ( max-width: 768px )
+  .thanksmodal
+    &-block
+      &__price
+        padding: 40px 20px
+    &-dialog
+      width: 80%
+@media ( max-width: 542px )
+  .thanksmodal
+    &-block
+      &__price
+        padding: 50px 0px
+      &__title
+        font-size: 17px
+        margin-bottom: 20px
+      &__subtitle
+        font-size: 15px
+    &-dialog
+      width: 100%
+@keyframes flash
+  from,
+  50%,
+  to
+    opacity: 1
+  25%,
+  75%
+    opacity: 0
+@keyframes zoomIn
+  from
+    opacity: 0
+    transform: scale3d(0.3, 0.3, 0.3)
+  50%
+    opacity: 1

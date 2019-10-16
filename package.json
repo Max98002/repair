@@ -1,0 +1,31 @@
+{
+  "name": "repair25.gulp",
+  "version": "1.0.0",
+  "description": "Сайт для компании \"Ремонт Квартир\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max98002/repair.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max98002/repair/issues"
+  },
+  "homepage": "https://github.com/Max98002/repair#readme",
+  "devDependencies": {
+    "@aquafadas/gulp-php-minify": "^0.3.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinify": "^1.0.2"
+  },
+  "dependencies": {
+    "@cedx/gulp-php-minify": "^10.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}

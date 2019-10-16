@@ -1,6 +1,7 @@
 .document
   padding: 42px 0 220px
   &__title
+    max-width: 683px
     font-size: 30px
     margin: 0 auto
     margin-bottom: 85px
@@ -21,3 +22,27 @@
     line-height: 24px
     letter-spacing: -0.2px
     +bold
+@media ( max-width: 1200px )
+  .document
+    padding: 42px 0 80px
+@media ( max-width: 912px )
+  .document
+    padding: 42px 0 10px
+    &__card
+      margin-bottom: 40px
+@media ( max-width: 760px )
+  .document
+    &__title
+      max-width: 350px
+      margin: 0 auto
+      margin-bottom: 50px
+      font-size: 18px
+      line-height: 1.4
+@media ( max-width: 560px )
+  .document
+    &__title
+      max-width: 272px
+      margin: 0 auto
+      margin-bottom: 50px
+      font-size: 18px
+      line-height: 1.4
