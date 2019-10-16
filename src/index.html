@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт Квартир</title>
+  <link rel="shortcut icon" href="./img/logo.ico" type="image/png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -51,8 +52,7 @@
             <ul class="hero-list">
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                  <img class="wow zoomIn" data-wow-delay="0.4s" src="./img/hero/hero-list/hero-clock.png"
-                    alt="calc">
+                  <img class="wow zoomIn" data-wow-delay="0.4s" src="./img/hero/hero-list/hero-clock.png" alt="calc">
                 </div>
                 <span class="hero-list__text">
                   Точно соблюдаем сроки
@@ -60,8 +60,7 @@
               </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                  <img class="wow zoomIn" data-wow-delay="0.4s" src="./img/hero/hero-list/hero-calc.png"
-                    alt="board">
+                  <img class="wow zoomIn" data-wow-delay="0.4s" src="./img/hero/hero-list/hero-calc.png" alt="board">
                 </div>
                 <span class="hero-list__text">
                   Рассчитаем смету на работы <br>
@@ -70,8 +69,7 @@
               </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                  <img class="wow zoomIn" data-wow-delay="0.4s" src="./img/hero/hero-list/hero-board.png"
-                    alt="clock">
+                  <img class="wow zoomIn" data-wow-delay="0.4s" src="./img/hero/hero-list/hero-board.png" alt="clock">
                 </div>
                 <span class="hero-list__text">
                   Предложим более 100 вариантов <br>
@@ -459,7 +457,7 @@
               <div class="input-group input-group__brif">
                 <input type="email" autocomplete="off" name="email" class="input brif__input" placeholder="Ваш email">
               </div>
-              <button class="button brif__button">Рассчитать стоимост</button>
+              <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
             </form>
           </div>
@@ -502,10 +500,10 @@
                 <img src="./img/contacts/2.png" alt="">
               </span>
               <span class="contacts-list__text">
-                <div class="contacts-list__strong">
+                <span class="contacts-list__strong">
                   Режим работы: <br>
                   с 9:00 до 18:00
-                </div>
+                </span>
 
               </span>
             </li>
@@ -590,11 +588,9 @@
   </div>
   <!-- /.back-top -->
 
-  <!-- <script src="./js/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/modal.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/jquery.validate.min.js"></script>
   <script src="./js/jquery.maskedinput.min.js"></script>
@@ -799,10 +795,10 @@
       });
     });
   </script>
-  <!-- end --  Подключення слік слайдера -->
+  <!-- end Подключення слік слайдера -->
 
   <!-- Google maps -->
-  <script>
+  <!-- <script>
     function myMap() {
       var mapProp = {
         center: new google.maps.LatLng(50.456281, 30.365321),
@@ -812,8 +808,26 @@
     }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb2gW-rwajmPboyMAM_FX7B_-EJH0c7CI&callback=myMap">
-  </script>
+  </script> -->
   <!--end Google maps -->
+
+  <script>
+    $(document).ready(function () {
+      var document = $('.document');
+      var documentTop = document.offset().top;
+
+      $(window).bind('scroll', function () {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > documentTop) {
+          $('#googleMap').html(
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5540.320115169274!2d30.51086982004365!3d50.455104940649804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5ca45ed977%3A0xc43fb88d084978ca!2z0LLRg9C70LjRhtGPINCS0LXQu9C40LrQsCDQltC40YLQvtC80LjRgNGB0YzQutCwLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1570787966021!5m2!1suk!2sua" width="100%" height="665" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+          )
+          $(window).unbind('scroll')
+        }
+      });
+
+    })
+  </script>
 
 </body>
 

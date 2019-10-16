@@ -18,28 +18,29 @@ $(document).ready(function () {
     menu.toggleClass('menu_active');
   });
 
+
   // function move() {
   //   modal.removeClass('modal_active');
   // }
   // setInterval(move, 5000);
 
   // jQuery AJAX
-  $('#offer-form').on('submit', function name(event) {
-    event.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: $(this).serialize(),
-      success: function (response) {
-        console.log("Hello Все гуд: " + response);
-        $('#offer-form')[0].reset();
-        modalText.addClass('offer_active');
-      },
-      error: function(jqHXR, textStatus, errorThrown) {
-        console.log(jqHXR + " " + textStatus);
-      }
-    });
-  });
+  // $('#offer-form').on('submit', function name(event) {
+  //   event.preventDefault();
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "mail.php",
+  //     data: $(this).serialize(),
+  //     success: function (response) {
+  //       console.log("Hello Все гуд: " + response);
+  //       $('#offer-form')[0].reset();
+  //       modalText.addClass('offer_active');
+  //     },
+  //     error: function (jqHXR, textStatus, errorThrown) {
+  //       console.log(jqHXR + " " + textStatus);
+  //     }
+  //   });
+  // });
   //end jQuery AJAX
 
 });
